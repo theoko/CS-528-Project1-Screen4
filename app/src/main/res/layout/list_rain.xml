@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/weatherItemImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.9"
+        android:src="@mipmap/ic_weather_rain" />
+
+        <LinearLayout
+            android:layout_weight="0.1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/weatherItemHeader"
+                android:text="Tuesday: sky is clear"
+                android:textSize="20sp"
+                android:padding="5sp"
+                android:textColor="@android:color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10sp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lowTemp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:text="Low: 71" />
+
+                <TextView
+                    android:id="@+id/highTemp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:text="High: 81" />
+
+                <TextView
+                    android:id="@+id/humidityPercentage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:text="Humidity: 67%" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+</LinearLayout>
